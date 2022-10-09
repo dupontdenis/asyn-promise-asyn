@@ -22,10 +22,15 @@ function delay(time) {
 async function anim() {
   await delay(2000);
   await nb5.animate(nbTumbling, nbTiming).finished;
+  document.body.insertAdjacentHTML("beforeend", `<p>  await nb5.animate(nbTumbling, nbTiming).finished;</p>`)
   await nb4.animate(nbTumbling, nbTiming).finished;
+  document.body.insertAdjacentHTML("beforeend", `<p>  await nb4.animate(nbTumbling, nbTiming).finished;</p>`)
   await nb3.animate(nbTumbling, nbTiming).finished;
+  document.body.insertAdjacentHTML("beforeend", `<p>  await nb3.animate(nbTumbling, nbTiming).finished;</p>`)
   await nb2.animate(nbTumbling, nbTiming).finished;
+  document.body.insertAdjacentHTML("beforeend", `<p>  await nb2.animate(nbTumbling, nbTiming).finished;</p>`)
   await nb1.animate(nbTumbling, nbTiming).finished;
+  document.body.insertAdjacentHTML("beforeend", `<p>  await nb1.animate(nbTumbling, nbTiming).finished;</p>`)
 }
 anim();
 
